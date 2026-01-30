@@ -1,0 +1,17 @@
+{
+  "name": "ducnguyen/nguyenbaduc",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "duchoccode259",
+      "email": "ducthien25092k5@gmail.com"
+    }
+  ],
+  "require": {
+    "fakerphp/faker": "^1.24"
+  }
+}
