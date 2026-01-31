@@ -6,14 +6,11 @@ use Faker\Factory;
 
 class HomeController {
     public function index() {
-        // 1. Chuẩn bị dữ liệu
         $message = "Chào mừng đến với MVC!";
         
-        // Lấy dữ liệu từ Model Student (Task 2)
         $students = (new Student())->getAllStudents();
         $studentInfo = "Tìm thấy " . count($students) . " sinh viên trong cơ sở dữ liệu.";
 
-        // Sử dụng Faker (Task 1)
         $faker = Factory::create();
         $fakeUser = [
             'name' => $faker->name,
